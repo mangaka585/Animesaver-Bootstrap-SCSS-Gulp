@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Comfortaa-Regular";
+  src: url("../fonts/Comfortaa-Regular.ttf");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/Oswald-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$background-black: black;
+
+.navbar-brand {
+  font-family: "Comfortaa-Regular";
+  font-size: 2.3rem;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+.navbar-dark {
+  background-color: $background-black;
+}
+
+.form-control {
+  border-width: 3px;
+}
