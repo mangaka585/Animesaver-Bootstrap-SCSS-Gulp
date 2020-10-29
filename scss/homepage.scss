@@ -23,6 +23,15 @@ $background-black: black;
   background-color: $background-black;
 }
 
+.navbar-nav {
+  font-family: "Oswald";
+  font-size: 1.2rem;
+}
+
+.nav-link  {
+  color: white;
+}
+
 .form-control {
   border-width: 3px;
 }
