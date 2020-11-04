@@ -12,6 +12,11 @@
 
 $background-black: black;
 
+body {
+  padding: 50px 0 0 0;
+  background: #f7f7f7;
+}
+
 .navbar-brand {
   font-family: "Comfortaa-Regular";
   font-size: 2.3rem;
@@ -23,7 +28,11 @@ $background-black: black;
   background-color: $background-black;
 }
 
-.navbar-nav {
+.comfortaa {
+  font-family: "Comfortaa-Regular";
+}
+
+.oswald {
   font-family: "Oswald";
   font-size: 1.2rem;
 }
@@ -32,6 +41,60 @@ $background-black: black;
   color: white;
 }
 
+.hover-primary:hover {
+  color: #007bff !important;
+}
+
 .form-control {
   border-width: 3px;
+}
+
+.text-black {
+  color: $background-black !important;
+}
+
+
+.card:hover {
+  background: #E6E6FA !important;
+}
+
+.card-header {
+  font-size: 0.8rem;
+}
+
+.card-pic {
+  height: 156px !important;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card-header:first-child {
+  border-top-left-radius: 0;
+}
+
+.card-body {
+  min-height: 90px;
+}
+
+.card-footer {
+  font-size: 0.9rem
+}
+
+.no-decoration:hover {
+  text-decoration: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
+
+.footer {
+  background: $background-black;
+}
+
+.min-size {
+  font-size: 0.8rem;
 }

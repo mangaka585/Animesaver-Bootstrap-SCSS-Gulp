@@ -23,35 +23,245 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand mr-auto ml-auto pb-0 pt-sm-0" href="#"><img src="img/S-icon.png" height="46" width="46" class="align-top"> AnimeSaver</a>
-            <div class="collapse navbar-collapse mb-2 mb-sm-1" id="Navbar">
-                <ul class="nav nav-pills mr-auto ml-auto flex-column flex-xl-row text-center">
+            <div class="collapse navbar-collapse mb-2 mb-xl-1" id="Navbar">
+                <ul class="nav nav-pills mr-auto ml-auto flex-column flex-xl-row text-center oswald">
                     <li class="nav-item"><a class="nav-link active" href="#"><span class="fa fa-desktop fa-lg"></span> Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-folder-open fa-lg"></span> Каталог</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-circle-o-notch fa-lg fa-spin"></span> Случайное</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-sign-in fa-lg"></span> Мой профиль</a></li>
+                    <li class="nav-item"><a class="nav-link hover-primary" href="./aboutus.html"><span class="fa fa-folder-open fa-lg"></span> Каталог</a></li>
+                    <li class="nav-item"><a class="nav-link hover-primary" href="#"><span class="fa fa-circle-o-notch fa-lg fa-spin"></span> Случайное</a></li>
+                    <li class="nav-item"><a class="nav-link hover-primary" href="./contactus.html"><span class="fa fa-sign-in fa-lg"></span> Мой профиль</a></li>
                 </ul>
                 <div class="input-group flex-nowrap col-xl-4">
                     <div class="input-group-prepend">
                         <button class="btn btn-info fa fa-search" id="search"></button>
                     </div>
-                    <input type="search" class="form-control" placeholder="Поиск" aria-label="Search" aria-describedby="addon-wrapping">
+                    <input type="search" class="form-control" placeholder="Найти аниме" aria-label="Search" aria-describedby="addon-wrapping">
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="container">
-
+    <div class="container pt-3">
+        <ul class="nav nav-tabs pl-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active text-black" id="home-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true"><i class="fa fa-ravelry fa-lg" aria-hidden="true"></i>
+                    Новое</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link text-black" id="profile-tab" data-toggle="tab" href="#journal" role="tab" aria-controls="journal" aria-selected="false"><i class="fa fa-comments-o fa-lg" aria-hidden="true"></i>
+                    Журнал</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link text-black" id="contact-tab" data-toggle="tab" href="#tasks" role="tab" aria-controls="tasks" aria-selected="false"><i class="fa fa-superpowers fa-lg" aria-hidden="true"></i>
+                    Заявки</a>
+            </li>
+        </ul>
+        <div class="tab-content border-left border-right border-bottom pt-3 pl-3 pr-3 rounded-bottom bg-white" id="myTabContent">
+            <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-12">
+                        <a href="#" class="no-decoration">
+                            <div class="card bg-light border-dark mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-4">
+                                        <img src="anime/dr_stone/stone.jpg" class="card-img card-pic" alt="Изображение аниме">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-header dark pt-1 pb-1 pr-1 bg-primary text-white text-right">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            21.10.2020
+                                        </div>
+                                        <div class="card-body text-dark h-auto pl-2 pt-1 pb-1">
+                                            <h6 class="card-title">Доктор Стоун</h6>
+                                        </div>
+                                        <div class="card-footer bg-transparent pb-1 pt-2 pl-1 pr-1 text-primary"><i class="fa fa-list-ul" aria-hidden="true"></i>
+                                            Серии 24 из 24
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-12">
+                        <a href="#" class="no-decoration">
+                            <div class="card bg-light border-dark mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-4">
+                                        <img src="anime/great_pretender/main.jpg" class="card-img card-pic" alt="Изображение аниме">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-header dark pt-1 pb-1 pr-1 bg-primary text-white text-right">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            21.10.2020
+                                        </div>
+                                        <div class="card-body text-dark h-auto pl-2">
+                                            <h6 class="card-title">Великий притворщик</h6>
+                                        </div>
+                                        <div class="card-footer bg-transparent pb-1 pt-2 pl-1 pr-1 text-primary"><i class="fa fa-list-ul" aria-hidden="true"></i>
+                                            Серии 23 из 23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-12">
+                        <a href="#" class="no-decoration">
+                            <div class="card bg-light border-dark mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-4">
+                                        <img src="anime/boruto/main4.jpg" class="card-img card-pic" alt="Изображение аниме">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-header dark pt-1 pb-1 pr-1 bg-warning text-white text-right">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            21.10.2020
+                                        </div>
+                                        <div class="card-body text-dark h-auto pl-2 pt-1 pb-1">
+                                            <h6 class="card-title">Боруто: Следующее поколение Наруто (серии 151 - 170)</h6>
+                                        </div>
+                                        <div class="card-footer bg-transparent pb-1 pt-2 pl-1 pr-1 text-primary"><i class="fa fa-list-ul" aria-hidden="true"></i>
+                                            Серии 151 - 170
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-12">
+                        <a href="#" class="no-decoration">
+                            <div class="card bg-light border-dark mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-4">
+                                        <img src="anime/gate_jietai/main2.jpg" class="card-img card-pic" alt="Изображение аниме">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-header dark pt-1 pb-1 pr-1 bg-primary text-white text-right">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            21.10.2020
+                                        </div>
+                                        <div class="card-body text-dark h-auto pl-2 pt-1 pb-1">
+                                            <h6 class="card-title">Врата: там бьются наши воины. Огненные Драконы (2 сезон)</h6>
+                                        </div>
+                                        <div class="card-footer bg-transparent pb-1 pt-2 pl-1 pr-1 text-primary"><i class="fa fa-list-ul" aria-hidden="true"></i>
+                                            Серии 15 из 15
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="journal" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="tab-pane fade" id="tasks" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer mt-2">
+        <div class="container">
+            <div class="row border-bottom pb-3 pt-3">
+                <div class="col-xl-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-white comfortaa">
+                                <h5>Социальные сети</h5>
+                            </div>
+                        </div>
+                        <div class="row text-secondary">
+                            <div class="col-1">
+                                <i class="fa fa-vk" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <a href="#" class="no-decoration text-secondary">
+                                    VKontakte
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row text-secondary">
+                            <div class="col-1">
+                                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <a href="#" class="no-decoration text-secondary">
+                                    Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-white comfortaa">
+                                <h5>Полезные ссылки</h5>
+                            </div>
+                        </div>
+                        <div class="row text-secondary">
+                            <div class="col-1">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <a href="#" class="text-secondary no-decoration">
+                                    Напишите нам
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row text-secondary">
+                            <div class="col-1">
+                                <i class="fa fa-file-powerpoint-o fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <a href="#" class="text-secondary no-decoration">
+                                    Privacy Policy
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row text-secondary">
+                            <div class="col-1">
+                                <i class="fa fa-gavel" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <a href="#" class="text-secondary no-decoration">
+                                    Disclaimer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="col-xl-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="min-size text-secondary">Мы молодой, развивающийся сайт аниме с необычными планами на будущее. Ведь у нас есть еще и второе направление: мы создали первый еженедельный журнал российской манги. Прямо сейчас читайте наш журнал, смотрите аниме сериалы и фильмы без рекламы. Японские аниме доступны для просмотра без регистрации, смс и каких-либо ограничений. В наших планах стать самым масштабным в России порталом аниме!</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-right">
+                                <h2><a class="text-white no-decoration comfortaa" href="#"><img src="img/S-icon.png" height="46" width="46" class="align-bottom"> AnimeSaver</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-3 pt-3">
+                <div class="col-12 text-center text-muted min-size">
+                    Авторские права и торговые марки на аниме и другие рекламные материалы принадлежат их соответствующим владельцам, и их использование разрешено
+                    в соответствии с положениями о добросовестном использовании Закона об авторском праве.
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <!--build:js js/index.min.js -->
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+
+    <!--build:js js/main-scripts.min.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main-scripts.js"></script>
     <!-- endbuild -->
 
 </body>
