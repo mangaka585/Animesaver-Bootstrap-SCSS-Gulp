@@ -93,13 +93,29 @@ gulp.task('usemin', function() {
         .pipe(gulp.dest('dist'));
 });
 
+gulp.task('usemin-php', function() {
+    return gulp.src('./*.php')
+        .pipe(flatmap(function(stream, file){
+            return stream
+                .pipe(usemin({
+                    css: [ rev() ],
+                    html: [ function() { return htmlmin({ collapseWhitespace: true })} ],
+                    js: [ uglify(), rev() ],
+                    inlinejs: [ uglify() ],
+                    inlinecss: [ cleanCss(), 'concat' ]
+                }))
+        }))
+        .pipe(gulp.dest('dist'));
+});
+
 gulp.task('build',
     gulp.series('clean',
         gulp.parallel(
             'copyfonts',
             'imagemin',
             'imagemin-anime',
-            'usemin'
+            'usemin',
+            'usemin-php'
         )
     )
 );
